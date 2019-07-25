@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ASPNETDB" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\ASPNETDB.MDF;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cargallerytable" Member="Cargallerytables">
+    <Type Name="Cargallerytable">
+      <Column Name="Galleryid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoryTable" Member="CategoryTables">
+    <Type Name="CategoryTable">
+      <Column Name="CategoryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FeatureTable" Member="FeatureTables">
+    <Type Name="FeatureTable">
+      <Column Name="Carid" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WheelBase" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RimSize" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mileage" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DriveTrain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TurningRadies" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EngineDisplacement" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EngineTechnology" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FuelCapacity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fuel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Range" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EntertainmentFeature" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Kmph" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Security" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SystemTable" Member="SystemTables">
+    <Type Name="SystemTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ImageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BookingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TechnicalTable" Member="TechnicalTables">
+    <Type Name="TechnicalTable">
+      <Column Name="CarId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TyreSize" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TransmissionType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaxPower" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaxTorque" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BoreStroke" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FuelInjection" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EngineType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NumberofCylinder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PositionofEngine" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Layout" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompressionRatio" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BrouchureTable" Member="BrouchureTables">
+    <Type Name="BrouchureTable">
+      <Column Name="BrouchureId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Brouchure" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentTable" Member="PaymentTables">
+    <Type Name="PaymentTable">
+      <Column Name="PaymentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CardType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ExpDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CVC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FeedbackTable" Member="FeedbackTables">
+    <Type Name="FeedbackTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Booking Table]" Member="Booking_Tables">
+    <Type Name="Booking_Table">
+      <Column Name="BookingId" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Profession" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DealerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CarID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BookingAmount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Proof" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestDriveTable" Member="TestDriveTables">
+    <Type Name="TestDriveTable">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DealerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Profession" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Proof" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BookingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DealerTable" Member="DealerTables">
+    <Type Name="DealerTable">
+      <Column Name="DealerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cartable" Member="Cartables">
+    <Type Name="Cartable">
+      <Column Name="carid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Variant" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Categoryid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Offer" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="OfferStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

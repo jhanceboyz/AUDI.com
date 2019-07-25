@@ -1,0 +1,121 @@
+﻿<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="../templates/jm-car-dealer-ef4/cache/jmf_c4f640c52f4a994b3d8ad21df43492419ba0.css?t=1447933074" type="text/css" />
+  <link rel="stylesheet" href="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,900,300,400italic" type="text/css" />
+  <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" />
+  <style type="text/css">
+ .djc_item .djc_mainimage { margin-left: 20px; margin-bottom: 20px; }  .djc_item .djc_mainimage img { padding: 0px; }  .djc_item .djc_thumbnail { margin-left: 20px; margin-bottom: 20px; }  .djc_item .djc_thumbnail img {  padding: 0px;  }  .djc_item .djc_images {width: 701px; }  .djc_item .djc_thumbnail { width: 215px; }  .djc_items .djc_image img { padding: 0px;} .djc_related_items .djc_image img { padding: 0px;} .djc_items .djc_image img {max-width: 345px;} .djc_category .djc_mainimage { margin-left: 20px; margin-bottom: 20px; }  .djc_category .djc_mainimage img { padding: 0px; }  .djc_category .djc_thumbnail { margin-left: 20px; margin-bottom: 20px; }  .djc_category .djc_thumbnail img {  padding: 0px;  }  .djc_category .djc_images {width: 172px; }  .djc_category .djc_thumbnail { width: 215px; }  .djc_subcategory .djc_image img { padding: 0px;} .djc_subcategory .djc_image img {max-width: 150px;} .djc_producer .djc_mainimage { margin-left: 20px; margin-bottom: 20px; }  .djc_producer .djc_mainimage img { padding: 0px; }  .djc_producer .djc_thumbnail { margin-left: 20px; margin-bottom: 20px; }  .djc_producer .djc_thumbnail img {  padding: 0px;  }  .djc_producer .djc_images {width: 372px; }  .djc_producer .djc_thumbnail { width: 215px; } 
+		.dj-hideitem, li.item-484, li.item-505, li.item-506, li.item-584, li.item-585, li.item-586, li.item-587, li.item-496, li.item-488 { display: none !important; }
+
+		#dj-megamenu141mobile { display: none; }
+		@media (max-width: 979px) {
+			#dj-megamenu141, #dj-megamenu141sticky, #dj-megamenu141placeholder { display: none; }
+			#dj-megamenu141mobile { display: block; }
+		}
+	
+  </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="jm-bar" class=""><div id="jm-bar-in" class="container-fluid container-large"><div id="jm-bar-space">
+    <div id="jm-row1" class="clearfix">
+		<div id="jm-bar-left" class="pull-left clearfix">
+			<div id="jm-logo-sitedesc" class="pull-left"><div id="jm-logo">
+	            <a href=""><img class="img-polaroid" id="djc_mainimage" alt="1" src="../images/logo.gif" /></a>
+            </div></div>
+			<div id="jm-top-menu-button" class="pull-right "><div class="jm-module-raw "><div id="dj-megamenu141mobileWrap"></div></div></div>
+		</div>
+		<div id="jm-bar-right" class="pull-right"><div id="jm-topbar" class="clearfix ">
+			<div class="jm-module-raw  visible-desktop"><div class="custom visible-desktop">
+	            <p><span class="jm-social"><a class="jm-facebook" href="#"> </a> <a class="jm-google" href="#"> </a> <a class="jm-twitter" href="#"> </a> <a class="jm-skype" href="#"> </a> <a class="jm-rss" href="#"> </a></span></p>
+            </div></div>
+            <div class="jm-module-raw  visible-desktop"><ul class="nav menu">
+                <asp:LoginStatus ID="LoginStatus1" runat="server"></asp:LoginStatus><li class="item-528"><a href="ChangePassword.aspx" >Change Password</a></li>
+                <li class="item-528"><a href="CheckFeedback.aspx" >Check Feedback</a></li></ul>
+            </div>
+		</div></div>
+	</div>
+    <div id="jm-row2"><div id="jm-djmenu" class="clearfix ">
+		<ul id="dj-megamenu141" class="dj-megamenu dj-megamenu-override " data-options='{"wrap":"jm-djmenu","animIn":"fadeInUp","animOut":"fadeOutDown","animSpeed":"normal","delay":"0","event":"mouseenter","fixed":"1","offset":"0","theme":"override","direction":"ltr"}' data-trigger="979">
+            <li class="dj-up itemid470 first active"><a class="dj-up_a active " href="Default.aspx" ><span class="dj-drop" >Home</span></a></li>
+            <li class="dj-up itemid470 first active parent"><a class="dj-up_a  " href="" ><span class="dj-drop" >Add Car Details</span></a>
+            <div class="dj-subwrap  single_column subcols1"><div class="dj-subwrap-in" style="width:250px;">
+                <div class="dj-subcol" style="width:250px"><ul class="dj-submenu">
+                    <li class="itemid730 first"><a href="Add Category.aspx">Add Category</a></li>
+                    <li class="itemid731"><a href="Add Car.aspx">Add Cars</a></li>
+                    <li class="itemid732"><a href="Add Features.aspx">Add Features</a></li>
+                    <li class="itemid730"><a href="Add Technical.aspx">Add Technical Features</a></li>
+                    <li class="itemid731"><a href="Add Car Brouchure.aspx">Add Car Brouchures</a></li>
+                    <li class="itemid732"><a href="Car Gallery.aspx">Add Car Gallery</a></li>
+                </ul></div>
+                <div style="clear:both;height:0"></div>
+            </div></div></li>
+            <li class="dj-up itemid470 first active parent"><a class="dj-up_a  " href="" ><span class="dj-drop" >Edit Car Details</span></a>
+            <div class="dj-subwrap  single_column subcols1"><div class="dj-subwrap-in" style="width:250px;">
+                <div class="dj-subcol" style="width:250px"><ul class="dj-submenu">
+                    <li class="itemid730 first"><a href="EditCategory.aspx">Edit Category</a></li>
+                    <li class="itemid731"><a href="Edit Car.aspx">Edit Cars</a></li>
+                    <li class="itemid732"><a href="Edit Car Features.aspx">Edit Features</a></li>
+                    <li class="itemid730"><a href="Edit Technical Features.aspx">Edit Technical Features</a></li>
+                    <li class="itemid731"><a href="Edit Car Brouchure.aspx">Edit Car Brouchures</a></li>
+                    <li class="itemid732"><a href="Edit Car Gallery.aspx">Edit Car Gallery</a></li>
+                </ul></div>
+                <div style="clear:both;height:0"></div>
+            </div></div></li>
+            <li class="dj-up itemid583 first active parent"><a class="dj-up_a  " href="" ><span class="dj-drop" >Dealer Detail</span></a>
+            <div class="dj-subwrap  multiple_cols subcols4"><div class="dj-subwrap-in" style="width:250px;">
+                <div class="dj-subcol" style="width:250px"><ul class="dj-submenu">
+                    <li class="item-564"><a href="AddDealer.aspx" >Add Dealer Detail</a></li>
+                    <li class="item-735"><a href="EditDealer.aspx" >Edit Dealer Detail</a></li>
+                </ul></div>
+	            <div style="clear:both;height:0"></div>
+            </div></div></li>
+            <li class="dj-up itemid583 first active parent"><a class="dj-up_a  " href="" ><span class="dj-drop" >Check Test Drive Booking Details</span></a>
+            <div class="dj-subwrap  multiple_cols subcols4"><div class="dj-subwrap-in" style="width:250px;">
+                <div class="dj-subcol" style="width:250px"><ul class="dj-submenu">
+                    <li class="item-564"><a href="Check TestDrive Booking.aspx" >Check Test Drive Booking</a></li>
+                    <li class="item-735"><a href="Check TestDrive Booking by Car Type.aspx" >Check Test Drive Booking by Car Type</a></li>
+                    <li class="item-735"><a href="Check TestDrive Booking for Dealer.aspx" >Check Test Drive Booking for Dealer</a></li>
+                </ul></div>
+	            <div style="clear:both;height:0"></div>
+            </div></div></li>
+            <li class="dj-up itemid583 first active parent"><a class="dj-up_a  " href="" ><span class="dj-drop" >Check Car Booking Details</span></a>
+            <div class="dj-subwrap  multiple_cols subcols4"><div class="dj-subwrap-in" style="width:250px;">
+                <div class="dj-subcol" style="width:250px"><ul class="dj-submenu">
+                    <li class="item-564"><a href="check Car Booking.aspx" >Check Car Booking</a></li>
+                    <li class="item-735"><a href="Check Car Booking By Car Type.aspx" >Check Car Booking by Car Type</a></li>
+                    <li class="item-735"><a href="Check Carbooking for Dealer.aspx" >Check Car Booking for Dealer</a></li>
+                    <li class="item-735"><a href="Check Payment.aspx" >Check Payments</a></li>
+                </ul></div>
+	            <div style="clear:both;height:0"></div>
+            </div></div></li>            
+        </ul>				
+    </div></div>
+</div></div></section>
+<div>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</div>
+<footer id="jm-footer" class=""><div id="jm-footer-in" class="container-fluid container-large"><div id="jm-footer-space"><div class="row-fluid">
+	<div id="jm-footer-left" class="span6 pull-left "><div id="jm-copyrights"><div class="custom"  >
+	    <p style="margin: 0;">AUDI.com All Rights Reserved.</p>
+    </div></div></div>
+    <div id="jm-footer-right" class="pull-right"><div id="jm-poweredby">
+		<a href="http://www.artitworld.com/" target="_blank" title="">Developed by Prabhdeep Kaur & Gurpreet Kaur</a>
+	</div></div>
+</div></div></div></footer>
+</form>
+</body>
+</html>
